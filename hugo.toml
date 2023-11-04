@@ -1,0 +1,5 @@
+baseURL = 'https://example.org/'
+languageCode = 'ar-eg'
+title = 'الصحيفة'
+pluralizeListTitles =   false
+# theme = 'basic'

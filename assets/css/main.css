@@ -1,0 +1,65 @@
+/*WEB FONTS _______________________*/
+@font-face {
+    font-family: noto-kufi;
+    src: url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.eot");
+    src: url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.svg#Noto Kufi Arabic")format("svg");
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-family: "CodeNewRomanNerdFontMono", cantarell, sans-serif; */
+    font-family:  noto-kufi;
+}
+body {
+    background: #dadada;
+}
+#_wraper {
+    min-height: 100vh;
+    width: 60%;
+    /* border: .5em purple solid; */
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#_header {
+    text-align: left;
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    gap: 1.05em;
+    list-style-type: none;
+}
+nav ul a { text-decoration: none; }
+ol {
+    list-style-position: inside;
+}
+ol h2 {display: inline-block;}
+ol li::marker {font-size: 1.3em;}
+
+#_main {
+    margin-block: 1rem;
+    flex-grow: 1;
+}
+#_footer {
+    text-align: center;
+}

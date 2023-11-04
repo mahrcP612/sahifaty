@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	{{-  partial "head.html" .  -}}
+	<body>
+        <div id="_wraper">
+            {{- partial "header.html" . -}}
+            <main id="_main">
+                {{- block "main" . }}{{- end }}
+            </main>
+            {{- partial "footer.html" . -}}
+        </div>
+	</body>
+</html>
