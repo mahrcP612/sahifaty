@@ -1,5 +1,6 @@
 baseURL = 'https://sahifaty.netlify.app/'
 languageCode = 'ar-eg'
 title = 'sahifaty'
+linkTitle = 'صحيفتي'
 pluralizeListTitles =   false
 # theme = 'basic'
