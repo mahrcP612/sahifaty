@@ -1,0 +1,63 @@
+/* Styling th Homepage ___________________________*/
+
+body {
+    background: #dadada;
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 100vh;
+    gap: 3em;
+}
+#_wraper {
+    max-width: 75%;
+    /* border: .5em purple solid; */
+   margin: 0 auto;
+    padding-block: .9em;
+    padding-inline: .9em;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+}
+
+#_header {
+    text-align: left;
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .2em solid lightblue;
+    /* margin-inline: .3em; */
+}
+#_header h2 {
+    background-color: lightblue;
+    color: #fff;
+    padding-inline: .2em;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    gap: 1.05em;
+    list-style-type: none;
+}
+nav ul a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    align-items: center;
+}
+
+#_main {
+    margin-block: 1rem;
+    flex-grow: 1;
+    /* border: .5em double lightblue; */
+    /* padding-inline: .9em; */
+    /* margin-inline: .3em; */
+}
+#_footer {
+    text-align: center;
+    padding-inline: .9em;
+    border-top: .2em solid lightblue;
+}

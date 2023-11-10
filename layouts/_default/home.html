@@ -6,14 +6,14 @@
         <div id="_wraper">
             <header id="_header">
 
-                <h2>{{ .Site.Title }}</h2>
+                <h2>{{ .Site.Params.title_header }}</h2>
 
                 <nav>
                     <ul>
-                        <li><a href="/">الصفحة الرئيسية</a></li>
-                        <li><a href="posts">منشورات</a></li>
-                        <li><a href="/about">حولنا</a></li>
-                        <li><a href="#">أخرى</a></li>
+                        <li><a href="/">{{ .Site.Params.homepage_name }}</a></li>
+                        <li><a href="posts">{{ .Site.Params.posts_name }}</a></li>
+                        <li><a href="/about">{{ .Site.Params.about_name }}</a></li>
+                        <li><a href="#">{{ .Site.Params.others_name }}</a></li>
                     </ul>
                 </nav>
             </header>
@@ -24,8 +24,10 @@
 
             <footer id="_footer">
                 <small>حقوق النشر {{now.Format "2006"}}&copy;محفوظة</small>
+                <!-- <small>{{ .Site.Params.copy_rights }} {{now.Format "2006"}}</small> -->
             </footer>
         </div>
+        <!-- <div id="_aside"><h2>{{ .Site.Params.aside_panel_name }}</h2></div> -->
 
   	</body>
 </html>
