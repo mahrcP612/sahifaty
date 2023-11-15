@@ -1,9 +1,8 @@
 baseURL = 'https://sahifaty.netlify.app/'
 languageCode = 'ar-eg'
-#title = 'sahifaty'
-title = "sahifaty" 
+title = 'sahifaty'
 pluralizeListTitles =   false
-# theme = 'basic
+# theme = 'basic'
 [params]
     title_header = "صحيفتي"
     homepage_name = "الصفحة الرئيسية"
