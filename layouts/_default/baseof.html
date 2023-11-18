@@ -2,13 +2,11 @@
 <html lang="ar" dir="rtl">
 	{{-  partial "head.html" .  -}}
 	<body>
-        <div id="_wraper">
             {{- partial "header.html" . -}}
             <main id="_main">
                 {{- block "main" . }}{{- end }}
             </main>
             {{- partial "footer.html" . -}}
-        </div>
         <!-- <div id="_aside"><h2>{{ .Site.Params.aside_panel_name }}</h2></div> -->
 	</body>
 </html>
