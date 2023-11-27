@@ -18,74 +18,56 @@
 html {
     /* font-family: "CodeNewRomanNerdFontMono", cantarell, sans-serif; */
     font-family:  noto-kufi, "Noto Kufi Arabic";
+    font-size: 1rem;
 }
 body {
-    background: #dadada;
-    display: flex;
-    flex-flow: row nowrap;
+    /* background: #dadada; */
+    background: #fff;
+    color: #333;
     min-height: 100vh;
-    gap: 3em;
-}
-#_wraper {
-    max-width: 75%;
-    /* border: .5em purple solid; */
-   margin: 0 auto;
-    padding-block: .9em;
-    padding-inline: .9em;
-    background-color: #fff;
-    color: #333;
     display: flex;
-    flex-flow: column wrap;
-    flex-grow: 1;
-}
-#_aside {
-    width: 20%;
-    padding: .5em;
-    display: flex;
-    flex-flow: column wrap;
-    background-color: #fff;
-    color: #333;
-    flex-grow: .5;
-}
+    flex-flow: column nowrap;
 
+}
 
 #_header {
-    text-align: left;
     /* padding: 5px; */
-    display: flex;
-    justify-content: space-between;
     border-bottom: .2em solid lightblue;
     /* margin-inline: .3em; */
+    background-color: #fff;
 }
 #_header h2 {
     background-color: lightblue;
     color: #fff;
     padding-inline: .2em;
+    text-align: right;
 }
 nav {
-    display: flex;
     align-items: center;
 }
 ul {
     display: flex;
     gap: 1.05em;
     list-style-type: none;
+    justify-content: space-around;
 }
 nav ul a { 
     text-decoration: none;
     display: block;
-    height: 100%;
-    align-items: center;
+    /* align-items: center; */
 }
+
 ol {
     list-style-position: inside;
 }
-ol h2 {display: inline-block;}
+ol  h3 {display: inline-block;}
 ol li::marker {font-size: 1.3em;}
 
 #_main {
-    margin-block: 1rem;
+    font-size: 0.7rem;
+    padding: 0.8rem;
     flex-grow: 1;
+    background-color: #ffffff;
     /* border: .5em double lightblue; */
     /* padding-inline: .9em; */
     /* margin-inline: .3em; */
@@ -93,5 +75,6 @@ ol li::marker {font-size: 1.3em;}
 #_footer {
     text-align: center;
     padding-inline: .9em;
+    background-color: #fff;
     border-top: .2em solid lightblue;
 }
