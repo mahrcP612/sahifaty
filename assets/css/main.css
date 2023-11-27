@@ -18,11 +18,12 @@
 html {
     /* font-family: "CodeNewRomanNerdFontMono", cantarell, sans-serif; */
     font-family:  noto-kufi, "Noto Kufi Arabic";
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 body {
     /* background: #dadada; */
     background: #fff;
+    color: #333;
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -30,10 +31,10 @@ body {
 }
 
 #_header {
-    text-align: left;
     /* padding: 5px; */
     border-bottom: .2em solid lightblue;
     /* margin-inline: .3em; */
+    background-color: #fff;
 }
 #_header h2 {
     background-color: lightblue;
@@ -42,29 +43,28 @@ body {
     text-align: right;
 }
 nav {
-    display: flex;
     align-items: center;
-    padding-inline: .4rem;
 }
 ul {
     display: flex;
     gap: 1.05em;
     list-style-type: none;
+    justify-content: space-around;
 }
 nav ul a { 
     text-decoration: none;
     display: block;
-    height: 100%;
-    align-items: center;
+    /* align-items: center; */
 }
 
 ol {
     list-style-position: inside;
 }
-ol h2 {display: inline-block;}
+ol  h3 {display: inline-block;}
 ol li::marker {font-size: 1.3em;}
 
 #_main {
+    font-size: 0.7rem;
     padding: 0.8rem;
     flex-grow: 1;
     background-color: #ffffff;
@@ -75,5 +75,6 @@ ol li::marker {font-size: 1.3em;}
 #_footer {
     text-align: center;
     padding-inline: .9em;
+    background-color: #fff;
     border-top: .2em solid lightblue;
 }

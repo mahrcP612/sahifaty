@@ -1,0 +1,23 @@
+@media (min-width: 480px) {
+  body {
+      background-color: #f5f5f5;
+  }
+  #_header {
+    display: flex;
+    flow-flex: row nowrap;
+  }
+  #_header nav { flex-grow: 1;}
+  nav ul { 
+      align-items: center;
+      justify-content: flex-end;
+      padding-inline: 1em;
+      height:100%;
+      gap: 2rem;
+  }
+  nav ul li {
+      flex-grow: 0;
+  }
+  #_main {
+    margin: 1rem;
+  }
+}
