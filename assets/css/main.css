@@ -1,80 +1,56 @@
-/*WEB FONTS _______________________*/
-@font-face {
-    font-family: noto-kufi;
-    src: url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.eot");
-    src: url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/8370b4cb6710362933e78e96fdaaf1f3.svg#Noto Kufi Arabic")format("svg");
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    /* font-family: "CodeNewRomanNerdFontMono", cantarell, sans-serif; */
-    font-family:  noto-kufi, "Noto Kufi Arabic";
-    font-size: 1rem;
-}
 body {
-    /* background: #dadada; */
-    background: #fff;
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: #222;
+  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic", 
+  sans-serif;
+  display: grid;
+  grid-template-rows: minmax(max-content, 50px) auto minmax(max-content, 40px);
 }
 
 #_header {
-    /* padding: 5px; */
-    border-bottom: .2em solid lightblue;
-    /* margin-inline: .3em; */
-    background-color: #fff;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .15em solid cyan;
 }
-#_header h2 {
-    background-color: lightblue;
-    color: #fff;
-    padding-inline: .2em;
-    text-align: right;
+#__logo {
+  min-width: 15%;
+  background-color: cyan;
 }
-nav {
-    align-items: center;
-}
-ul {
-    display: flex;
-    gap: 1.05em;
-    list-style-type: none;
-    justify-content: space-around;
-}
-nav ul a { 
-    text-decoration: none;
-    display: block;
-    /* align-items: center; */
+.hamLabel {
+  display: none;
 }
 
-ol {
-    list-style-position: inside;
+.navbar {
+  min-width: 50%;
 }
-ol  h3 {display: inline-block;}
-ol li::marker {font-size: 1.3em;}
+.navList {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+.navLinks {
+  transition: background-color 300ms ease-out;
+  transition: color 300ms ease-out;
+  color: cyan;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding-inline: .7em;
+}
+.navLinks:hover {
+  color: aliceblue;
+  background-color: cyan;
+}
 
-#_main {
-    font-size: 0.7rem;
-    padding: 0.8rem;
-    flex-grow: 1;
-    background-color: #ffffff;
-    /* border: .5em double lightblue; */
-    /* padding-inline: .9em; */
-    /* margin-inline: .3em; */
-}
 #_footer {
-    text-align: center;
-    padding-inline: .9em;
-    background-color: #fff;
-    border-top: .2em solid lightblue;
+  background-color: white;
+  border-top: .15em solid cyan;
+  display: grid;
+  place-content: center;
 }

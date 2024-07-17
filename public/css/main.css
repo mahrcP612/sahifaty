@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: #222;
+  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic", 
+  sans-serif;
+  display: grid;
+  grid-template-rows: minmax(max-content, 50px) auto minmax(max-content, 40px);
+}
+
+#_header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .15em solid cyan;
+}
+#__logo {
+  min-width: 15%;
+  background-color: cyan;
+}
+.hamLabel {
+  display: none;
+}
+
+.navbar {
+  min-width: 50%;
+}
+.navList {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+.navLinks {
+  transition: background-color 300ms ease-out;
+  transition: color 300ms ease-out;
+  color: cyan;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding-inline: .7em;
+}
+.navLinks:hover {
+  color: aliceblue;
+  background-color: cyan;
+}
+
+#_footer {
+  background-color: white;
+  border-top: .15em solid cyan;
+  display: grid;
+  place-content: center;
+}
