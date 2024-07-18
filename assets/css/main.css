@@ -5,8 +5,8 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   color: #222;
-  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic", 
-  sans-serif;
+  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic",
+    sans-serif;
   display: grid;
   grid-template-rows: minmax(max-content, 50px) auto minmax(max-content, 40px);
 }
@@ -17,10 +17,12 @@ body {
   justify-content: space-between;
   border-bottom: .15em solid cyan;
 }
+
 #__logo {
   min-width: 15%;
   background-color: cyan;
 }
+
 .hamLabel {
   display: none;
 }
@@ -28,12 +30,14 @@ body {
 .navbar {
   min-width: 50%;
 }
+
 .navList {
   height: 100%;
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
 }
+
 .navLinks {
   transition: background-color 300ms ease-out;
   transition: color 300ms ease-out;
@@ -43,6 +47,7 @@ body {
   align-items: center;
   padding-inline: .7em;
 }
+
 .navLinks:hover {
   color: aliceblue;
   background-color: cyan;
@@ -53,4 +58,6 @@ body {
   border-top: .15em solid cyan;
   display: grid;
   place-content: center;
+  max-height: fit-content;
+  white-space: nowrap;
 }
