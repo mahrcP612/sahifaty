@@ -12,6 +12,7 @@
     }       
     #_header {
         border-bottom: .05em solid white;
+        z-index: 3;
     }
  
     .hamLabel {
@@ -54,28 +55,26 @@
         transition: 200ms ease-in-out;
     }
     .hamLabel:has(input:checked) {
-        border-color: #dadada;
+        border-color: #ffffff;
         background-color: cyan;
     } 
-
     .navbar {
-        transition: visibility 400ms ease-out, opacity 400ms ease-out;
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+        display: none;
+    }
+    #menu {
+        /* transition: visibility 400ms ease-out, opacity 400ms ease-out; */
+        /* visibility: hidden; */
+        /* opacity: 0; */
         font-size: 1.5em;
         font-weight: bold;
         background-color: cyan;
-        z-index: 1;
     }
-    .hamLabel:has(input:checked) + .navbar {
-        transition: visibility 400ms ease-in, opacity 400ms ease-in;
-        visibility: visible;
-        opacity: 1;
+    .hamLabel:has(input:checked) + #menu {
+        /* transition: visibility 400ms ease-in, opacity 400ms ease-in; */
+        /* visibility: visible; */
+        /* opacity: 1; */
+        min-height: 0;
+
     }
     .navList {
         height: 100%;        
