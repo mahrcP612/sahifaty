@@ -1,0 +1,19 @@
+#_main {
+    /* padding: .8em; */
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    /* gap: .5em; */
+    background-color: hsl(0, 0%, 74%);
+}
+
+.__mainSec,
+.__sideSec {
+    background-color: white;
+    padding: .6em;
+}
+.__mainSec {
+    border-left: .15em solid cyan;
+}
+.__sideSec {
+    margin: 0em 1em 0em 0em;
+}

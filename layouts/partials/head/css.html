@@ -1,16 +1,30 @@
-{{ $main := resources.Get "css/main.css" }}
-{{ $home := resources.Get "css/home.css" }}
-{{ $normalize := resources.Get "css/normalize.css" }}
-{{ $media_query := resources.Get "css/media-query.css" }}
-<!-- <link rel="stylesheet" href="{{ $normalize.RelPermalink }}"> -->
-<!-- <link rel="stylesheet" href="{{ $main.RelPermalink }}"> -->
-<!-- <link rel="stylesheet" href="{{ $home.RelPermalink }}"> -->
-<!-- <link rel="stylesheet" href="{{ $media_query.RelPermalink }}"> -->
+{{- with resources.Get "css/main.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}
 
-<!-- {{ $css := resources.Get "css/main.css" }} -->
-<!-- this method of declaring a variable for the css derictory doesn't work with resources.Get function -->
-<!-- you might use this function for fingerprinting, minifing or just for Sass -->
+{{- with resources.Get "css/normal.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}
 
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/media-query.css" | relURL }}">
+{{- with resources.Get "css/media-query.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}
+

@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-	{{-  partial "head.html" .  -}}
-	<body>
-
-            <header id="_header">
-
-                <h2>{{ .Site.Params.title_header }}</h2>
-
-                <nav>
-                    <ul>
-                        <li><a href="/">{{ .Site.Params.homepage_name }}</a></li>
-                        <li><a href="posts">{{ .Site.Params.posts_name }}</a></li>
-                        <li><a href="/about">{{ .Site.Params.about_name }}</a></li>
-                        <li><a href="#">{{ .Site.Params.others_name }}</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <main id="_main">
-                {{ .Content }}
-            </main>
-
-            <footer id="_footer">
-                <small>حقوق النشر {{now.Format "2006"}}&copy;محفوظة</small>
-                <!-- <small>{{ .Site.Params.copy_rights }} {{now.Format "2006"}}</small> -->
-            </footer>
-        <!-- <div id="_aside"><h2>{{ .Site.Params.aside_panel_name }}</h2></div> -->
-
-  	</body>
+<html lang="ar-eg" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jam</title>
+  <link rel="stylesheet" href="css/home.css">
+  {{ partialCached "head/css.html" . }}
+</head>
+<body>
+  <header id="_header">
+    <div id="__logo"></div>
+    <label for="hamBtn" class="hamLabel">
+      <input type="checkbox" name="hamCheck" id="hamBtn">
+    </label>
+    <nav class="navbar">
+    <ul class="navList">
+      <li class="navItems"><a href="/" class="navLinks">{{ .Site.Params.homepage_name }}</a></li>
+      <li class="navItems"><a href="/posts" class="navLinks">{{ .Site.Params.posts_name }}</a></li>
+      <li class="navItems"><a href="/about" class="navLinks">{{ .Site.Params.about_name }}</a></li>
+      <li class="navItems"><a href="/others" class="navLinks">{{ .Site.Params.others_name }}</a></li>
+    </ul>
+    </nav>
+  </header>
+  <aside id="_menu">
+    <ul class="navList">
+      <li class="navItems"><a href="/" class="navLinks">{{ .Site.Params.homepage_name }}</a></li>
+      <li class="navItems"><a href="/posts" class="navLinks">{{ .Site.Params.posts_name }}</a></li>
+      <li class="navItems"><a href="/about" class="navLinks">{{ .Site.Params.about_name }}</a></li>
+      <li class="navItems"><a href="/others" class="navLinks">{{ .Site.Params.others_name }}</a></li>
+    </ul>
+  </aside>
+  <main id="_main">
+  </main>
+  <footer id="_footer">
+    <p class="copyRights">Copyright {{ now.Year }}. All rights reserved.</p>
+  </footer>
+</body>
 </html>

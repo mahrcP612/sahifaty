@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>magazine</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on magazine</description>
+    <generator>Hugo</generator>
+    <language>ar-eg</language>
+    <lastBuildDate>Tue, 06 Aug 2024 15:58:02 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second_post</title>
+      <link>http://localhost:1313/posts/second_post/</link>
+      <pubDate>Tue, 06 Aug 2024 15:58:02 +0300</pubDate>
+      <guid>http://localhost:1313/posts/second_post/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
+      <title>أخرى</title>
+      <link>http://localhost:1313/others/</link>
+      <pubDate>Sun, 30 Jun 2024 16:47:37 +0300</pubDate>
+      <guid>http://localhost:1313/others/</guid>
+      <description>&lt;p&gt;مواضيع أخرى يمكن ان تضاف هنا فيما بعد&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>حولنا</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 30 Jun 2024 16:47:29 +0300</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;حتى هذه اللحظة يعمل شخص واحد في هذا الموقع&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>أول منشور</title>
+      <link>http://localhost:1313/posts/first_post/</link>
+      <pubDate>Sun, 30 Jun 2024 16:47:15 +0300</pubDate>
+      <guid>http://localhost:1313/posts/first_post/</guid>
+      <description>&lt;h1 id=&#34;أهلا-أيها-العالم&#34;&gt;أهلاَ أيها العالم&lt;/h1&gt;&#xA;&lt;p&gt;سيكون بسيط كونه المنشور الأول لذلك لن اكتب الكثير هنا&lt;/p&gt;&#xA;&lt;p&gt;لا يعرض أحد لتدخل تعسفي في حياته الخاصة أو أسرته أو مسكنه أو مراسلاته أو لحملات على شرفه وسمعته. ولكل شخص الحق في حماية القانون من مثل هذا التدخل أو تلك الحملات. لكل شخص الحق في حرية التفكير والضمير والدين. ويشمل هذا الحق حرية تغيير ديانته أو عقيدته، وحرية الإعراب عنهما بالتعليم والممارسة وإقامة الشعائر ومراعاتها سواء أكان ذلك سرا أم مع الجماعة. لكل شخص الحق في حرية الرأي والتعبير. ويشمل هذا الحق حرية اعتناق الآراء دون أي تدخل، واستقاء الأنباء والأفكار وتلقيها وإذاعتها بأية وسيلة كانت دون تقيد بالحدود الجغرافية. لكل شخص بصفته عضوا في المجتمع الحق في الضمانة الاجتماعية وفي أن تحقق بوساطة المجهود القومي والتعاون الدولي وبما يتفق ونظم كل دولة ومواردها الحقوق الاقتصادية والاجتماعية والتربوية التي لا غنى عنها لكرامته وللنمو الحر لشخصيته.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post</title>
+      <link>http://localhost:1313/post/</link>
+      <pubDate>Sat, 29 Jun 2024 19:32:04 +0300</pubDate>
+      <guid>http://localhost:1313/post/</guid>
+      <description>&lt;p&gt;My Work Is Here&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

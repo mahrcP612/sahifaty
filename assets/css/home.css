@@ -1,10 +1,10 @@
-/* Styling th Homepage ___________________________*/
 
-
-#_main {
-    flex-grow: 1;
-    /* border: .5em double lightblue; */
-    /* padding-inline: .9em; */
-    /* margin-inline: .3em; */
+#__gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+.g-box {
+    background-image: url(/assets/img/01.jpg);
 }

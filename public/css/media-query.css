@@ -1,0 +1,107 @@
+/* 1201px - and more extra large screens, TV */
+/* 1025px - 1200px desktops */
+/* 769px - 1024px labtops */
+@media (max-width: 1024px) {
+
+}
+
+/* 481px - 768px tablets */
+@media  (max-width: 768px) {
+    body {
+        font-size: .8rem;
+    }       
+    #_header {
+        border-bottom: .05em solid white;
+        z-index: 3;
+    }
+ 
+    .hamLabel {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+        min-width: max-content;
+        min-height: max-content;
+        border: 1px solid cyan;
+        align-self: center;
+        margin-left: 1em;
+        padding: 4px;
+        cursor: pointer;
+        z-index: 4;
+    }
+    .hamLabel input,
+    .hamLabel::after,
+    .hamLabel::before {
+        content: "";
+        width: 30px;
+        height: 5px;
+        background-color: cyan;
+        transition: background-color 200ms ease-in-out;
+        transform-origin: left center;
+    }
+    .hamLabel input {
+        padding: 0;
+        margin: 0;
+        outline: none;        
+        appearance: none;
+        pointer-events: none;
+    }
+    .hamLabel input:checked,
+    .hamLabel:has(input:checked)::before,
+    .hamLabel:has(input:checked)::after {
+        background-color: white;
+        transition: 200ms ease-in-out;
+    }
+    .hamLabel:has(input:checked) {
+        border-color: #ffffff;
+        background-color: cyan;
+    } 
+    .navbar {
+        display: none;
+    }
+    #menu {
+        /* transition: visibility 400ms ease-out, opacity 400ms ease-out; */
+        /* visibility: hidden; */
+        /* opacity: 0; */
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: cyan;
+    }
+    .hamLabel:has(input:checked) + #menu {
+        /* transition: visibility 400ms ease-in, opacity 400ms ease-in; */
+        /* visibility: visible; */
+        /* opacity: 1; */
+        min-height: 0;
+
+    }
+    .navList {
+        height: 100%;        
+        display: flex;
+        justify-content: center;
+        /* gap: .5em; */
+        flex-flow: column nowrap;
+    }
+    .navLinks {
+        /* width: 100%; */
+        text-align: center;
+        padding: .5em;
+        background-color: cyan;
+        color: aliceblue;
+        /* border-bottom: 1px solid aliceblue; */
+    }
+    a:hover {
+        background-color: aliceblue;
+        color: cyan;
+        /* border-bottom-color: cyan; */
+    }
+}
+
+/* 320px — 480px phones */
+@media (max-width: 480px) {
+    body {
+        font-size: .7rem;
+    }
+
+}
