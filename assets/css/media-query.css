@@ -55,7 +55,7 @@
         transition: 200ms ease-in-out;
     }
     .hamLabel:has(input:checked) {
-        border-color: #ffffff;
+        border-color: #dadada;
         background-color: cyan;
     } 
     .navbar {
