@@ -14,7 +14,7 @@
         border-bottom: .05em solid white;
         z-index: 3;
     }
- 
+    
     .hamLabel {
         display: flex;
         flex-direction: column;
@@ -52,30 +52,38 @@
     .hamLabel:has(input:checked)::before,
     .hamLabel:has(input:checked)::after {
         background-color: white;
-        transition: 200ms ease-in-out;
     }
-    .hamLabel:has(input:checked) {
-        border-color: #dadada;
-        background-color: cyan;
-    } 
+    @keyframes menuIn {
+        0% { opacity: 0;}
+        75% { opacity: 1;}
+        100% { display: none;}
+    }
+    @keyframes menuOut {
+        0% { opacity: 1; display: block; background-color: red;}
+        75% { opacity: 0; display: block;}
+        100% { display: none;}
+    }
     .navbar {
-        display: none;
-    }
-    #menu {
         /* transition: visibility 400ms ease-out, opacity 400ms ease-out; */
         /* visibility: hidden; */
+        animation: menuOut 3000ms ease-out backwards;
+        display: none;
         /* opacity: 0; */
         font-size: 1.5em;
         font-weight: bold;
         background-color: cyan;
     }
-    .hamLabel:has(input:checked) + #menu {
+    .hamLabel:has(input:checked) + .navbar {
         /* transition: visibility 400ms ease-in, opacity 400ms ease-in; */
         /* visibility: visible; */
         /* opacity: 1; */
+        animation: menuIn 900ms ease-in forwards;
+        display: block;
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
         min-height: 0;
-
     }
+    
     .navList {
         height: 100%;        
         display: flex;

@@ -8,7 +8,7 @@ body {
   font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic",
     sans-serif;
   display: grid;
-  grid-template-rows: minmax(max-content, 50px) 20vh auto minmax(max-content, 40px);
+  grid-template-rows: minmax(max-content, 50px)  auto minmax(max-content, 40px);
 }
 
 #_header {
