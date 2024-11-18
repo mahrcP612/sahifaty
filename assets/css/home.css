@@ -1,5 +1,5 @@
 
-#__gallery {
+/* #__gallery {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -8,3 +8,28 @@
 .g-box {
     background-image: url(/assets/img/01.jpg);
 }
+ */
+#_main {
+  /* background-image: url("https://pixabay.com/photos/forest-river-nature-fall-autumn-8540698/"); */
+  background-image: url("/assets/img/09.jpg");
+}
+
+#_post-nav {
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    bottom: 0em;
+    width: 20%;
+    background-color: whitesmoke;
+    border-right: .25em solid cyan;
+}
+#_info {
+    position: absolute;
+    left: 0em;
+    top: 0em;
+    bottom: 0em;
+    width: 20%;
+    background-color: whitesmoke;
+    border-left: .25em solid cyan;
+}
+

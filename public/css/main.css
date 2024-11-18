@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
-
+ */
+/* @font-face {
+  font-family: droid-kufi;
+  src: url('/static/TrueType/iosevka/Iosevka_Nerd_Font_Propo_Regular.ttf') format('ttf'),
+       url('/static/TrueType/iosevka/Iosevka_Nerd_Font_Propo_Bold.ttf') format('ttf');
+  font-display: swap;
+}
+ */
+html {
+  background-color: #e4e4e4;
+}
 body {
   min-height: 100vh;
   min-height: 100dvh;
   color: #222;
-  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic",
-    sans-serif;
+  /* font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic", */
+  /* font-family: 'DroidArabicKufiRegular', "IBM Plex Sans Arabic", */
+  font-family: 'DroidArabicKufiRegular';
+  font-size: .9rem;
+  max-width: 50%;
+  margin-inline: auto;
   display: grid;
   grid-template-rows: minmax(max-content, 50px)  auto minmax(max-content, 40px);
 }
@@ -51,6 +65,29 @@ body {
 .navLinks:hover {
   color: aliceblue;
   background-color: cyan;
+}
+
+#_main {
+  background: whitesmoke;
+  padding: .5em;
+}
+#_post-nav {
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    bottom: 0em;
+    width: 20%;
+    background-color: whitesmoke;
+    border-right: .25em solid cyan;
+}
+#_info {
+    position: absolute;
+    left: 0em;
+    top: 0em;
+    bottom: 0em;
+    width: 20%;
+    background-color: whitesmoke;
+    border-left: .25em solid cyan;
 }
 
 #_footer {

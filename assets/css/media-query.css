@@ -9,12 +9,16 @@
 @media  (max-width: 768px) {
     body {
         font-size: .8rem;
+        max-width: 100%;
     }       
     #_header {
         border-bottom: .05em solid white;
         z-index: 3;
     }
-    
+    #_info,
+    #_post-nav {
+        display: none;
+    } 
     .hamLabel {
         display: flex;
         flex-direction: column;
